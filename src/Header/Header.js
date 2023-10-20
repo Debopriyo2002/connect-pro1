@@ -25,10 +25,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header-left">
-        <img
-          src="https://drive.google.com/file/d/1Q0L9Y-5drUel6Ftx33F_cZrkGonGGv-k/view"
-          alt="Connect-Pro"
-        />
+        <img src="https://drive.google.com/open?id=1-KSwGwBT436Ca8OyBasBL6Xz2yvv6AEF&usp=drive_fs" alt="Connect-Pro" />
         <div className="header-search">
           <SearchIcon />
           <input type="text" />
