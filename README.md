@@ -1,4 +1,4 @@
-#Connect Pro
+Connect-Pro which created with ReactJS & ReduxLink.
 
 
 ## Topics
@@ -8,8 +8,15 @@
 - Flexbox
 - Firebase Firestore Database
 - React Flip Move
+- Deploy the App LIVE on Firebase
 
+## Create By
+Manish (fornt-End & Backend)
+Debopriyo paul(backend)
+Tanmay(research paper)
+Harshita(UI)
 
+In the project directory, you can run:
 
 ### `npm start`
 
