@@ -4,6 +4,24 @@ import InfoIcon from "@material-ui/icons/Info";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 
 function Widgets() {
+  // Define an array of news articles
+  const newsArticles = [
+    { heading: "The Full Stack Junkie Is Back", subtitle: "Top news - 9099 readers" },
+    { heading: "Coronavirus: UK updates", subtitle: "Top news - 886 readers" },
+    { heading: "Bitcoin Breaks $22K", subtitle: "Crypto - 8K readers" },
+    { heading: "JavaScript Mastery", subtitle: "Code - 1.2M readers" },
+    { heading: "Tesla hits new highs", subtitle: "Cars & auto - 300 readers" },
+    { heading: "AI overtaking the World", subtitle: "Top news - 13K readers" },
+  ];
+
+  // Function to get a random subset of news articles
+  const getRandomNewsArticles = (count) => {
+    const shuffledArticles = newsArticles.sort(() => 0.5 - Math.random()); // Shuffle the array
+    return shuffledArticles.slice(0, count); // Get the first 'count' articles
+  };
+
+  const randomNewsArticles = getRandomNewsArticles(3); // Get 3 random news articles
+
   const newsArticle = (heading, subtitle) => (
     <div className="widgets-article">
       <div className="widgets-articleLeft">
@@ -23,11 +41,11 @@ function Widgets() {
         <InfoIcon />
       </div>
 
-      {newsArticle("The Full Stack Junkie Is Back", "Top news - 9099 reader")}
-      {newsArticle("Coronavirus: UK updates", "Top news - 886 reader")}
-      {newsArticle("Bitcoin Breaks $22K", "Crypto - 8000 reader")}
-      {newsArticle("JavaScript Mastery", "Code - 120000 reader")}
-      {newsArticle("Tesla hits new highs", "Cars & auto - 300 reader")}
+      {randomNewsArticles.map((article, index) => (
+        <div key={index}>
+          {newsArticle(article.heading, article.subtitle)}
+        </div>
+      ))}
     </div>
   );
 }
