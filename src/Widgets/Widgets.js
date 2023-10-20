@@ -12,6 +12,10 @@ function Widgets() {
     { heading: "JavaScript Mastery", subtitle: "Code - 1.2M readers" },
     { heading: "Tesla hits new highs", subtitle: "Cars & auto - 300 readers" },
     { heading: "AI overtaking the World", subtitle: "Top news - 13K readers" },
+    { heading: "Apple's AirTag 2 release pushed back to 2025", subtitle: "Tech news - 1K readers" },
+    { heading: "Whats the strategy behind the acquisition of game development tools like “Twinmotion” by Epic Games?", subtitle: "Gaming news - 1.3K readers" },
+    { heading: "10 essential cybersecurity cheat sheets available for free", subtitle: "Tech news - 1.7K readers" },
+    { heading: "Top Job after BCA", subtitle: "Tech news - 7.1K readers" },
   ];
 
   // Function to get a random subset of news articles
@@ -20,7 +24,7 @@ function Widgets() {
     return shuffledArticles.slice(0, count); // Get the first 'count' articles
   };
 
-  const randomNewsArticles = getRandomNewsArticles(3); // Get 3 random news articles
+  const randomNewsArticles = getRandomNewsArticles(5); // Get 5 random news articles
 
   const newsArticle = (heading, subtitle) => (
     <div className="widgets-article">
