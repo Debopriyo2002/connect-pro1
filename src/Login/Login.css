@@ -5,10 +5,10 @@
     padding: 100px 0;
 }
   
-.login > img {
+.login  img {
     object-fit: contain;
-    height: 70px;
-    margin: 20px 0;
+    height: 245px;
+    margin: -47px 0;
 }
   
 .login > form {

@@ -60,11 +60,9 @@ function Login() {
 
   return (
     <div className="login">
-      <img
-        src="https://drive.google.com/file/d/1Q0L9Y-5drUel6Ftx33F_cZrkGonGGv-k/view"
-        alt="Connect-Pro"
-      />
-
+    
+        <img src={require('./logo1.png')} alt="Connect-Pro"/>
+    
       <form>
         <input
           placeholder="Full name (required for register)"
@@ -104,7 +102,7 @@ function Login() {
           Register Now
         </span>
       </p>
-    </div>
+    </div >
   );
 }
 
