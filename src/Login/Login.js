@@ -60,9 +60,15 @@ function Login() {
 
   return (
     <div className="login">
+<<<<<<< HEAD
      
      <img src={require('./logo1.png')} alt="Connect-Pro" />
 
+=======
+    
+        <img src={require('./logo1.png')} alt="Connect-Pro"/>
+    
+>>>>>>> e91e3595cb36572c0711527f610f90c5d887deee
       <form>
         <input
           placeholder="Full name (required for register)"
@@ -102,7 +108,7 @@ function Login() {
           Register Now
         </span>
       </p>
-    </div>
+    </div >
   );
 }
 
