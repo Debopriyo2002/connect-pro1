@@ -40,6 +40,7 @@ function Feed() {
       message: input,
       photoUrl: user.photoUrl,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      likes:[],
     });
 
     setInput("");
@@ -86,6 +87,7 @@ function Feed() {
             description={description}
             message={message}
             photoUrl={photoUrl}
+            id={id}
           />
         ))}
       </FlipMove>

@@ -1,13 +1,16 @@
 .Like-container{
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 5px 10px;
+    gap: 5px;
+    padding: 21px 10px;
+    cursor: pointer;
 }
 
 p{
     font-family: system-ui;
     font-weight: 600;
     font-size: 14px;
+    color: rgba(0, 0, 0, 0.835);
+
 
 }

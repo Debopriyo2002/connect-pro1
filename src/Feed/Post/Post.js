@@ -6,8 +6,12 @@ import ChatOutlinedIcon from "@material-ui/icons/ChatOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import { Avatar } from "@material-ui/core";
 import InputOptions from "../InputOptions/InputOptions";
+import LikeButton from "../components/LikeButton";
+import { useEffect } from "react";
 
-const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
+
+const Post = forwardRef(({ id, name, description, message, photoUrl }, ref) => {
+ 
   return (
     <div ref={ref} className="post">
       <div className="post-header">
@@ -24,10 +28,13 @@ const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
       </div>
 
       <div className="post-buttons">
-        <InputOptions Icon={ThumbUpAltOutlinedIcon} title="Like" color="gray" />
+        {/* <InputOptions Icon={ThumbUpAltOutlinedIcon} title="Like" color="gray" />
         <InputOptions Icon={ChatOutlinedIcon} title="Comment" color="gray" />
         <InputOptions Icon={ShareOutlinedIcon} title="Share" color="gray" />
-        <InputOptions Icon={SendOutlinedIcon} title="Send" color="gray" />
+        <InputOptions Icon={SendOutlinedIcon} title="Send" color="gray" /> */}
+        <LikeButton postId={id}>
+        </LikeButton>
+
       </div>
     </div>
   );
