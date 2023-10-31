@@ -1,16 +1,25 @@
 .Like-container{
     display: flex;
-    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
     gap: 5px;
     padding: 21px 10px;
     cursor: pointer;
+    /* position: relative;
+    right: 150px; */
 }
-
+/* .like-innner{
+    margin-top: -20px;
+} */
 p{
     font-family: system-ui;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 13px;
     color: rgba(0, 0, 0, 0.835);
 
 
 }
+.Like-container.liked {
+    color: blue; 
+  }
+  
