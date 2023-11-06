@@ -5,9 +5,9 @@ import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 import ChatOutlinedIcon from "@material-ui/icons/ChatOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import { Avatar } from "@material-ui/core";
-import InputOptions from "../InputOptions/InputOptions";
 import LikeButton from "../components/LikeButton";
-// import CommentButton from "../components/comments";
+import CommentButton from "../components/comments";
+// import likeandComment from "./likeandComment";
 import { useEffect } from "react";
 
 
@@ -32,10 +32,8 @@ const Post = forwardRef(({ id, name, description, message, photoUrl }, ref) => {
 
         <LikeButton postId={id}>
         </LikeButton>
-        {/* <CommentButton postId={id} /> */}
-        {/* <CommentButton postId={id}>
-
-        </CommentButton> */}
+        <CommentButton postId={id} />
+        {/* <likeandComment postId={id} /> */}
 
 
 

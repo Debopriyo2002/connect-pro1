@@ -21,13 +21,15 @@
   
   .post-body {
     overflow-wrap: anywhere;
+    font-family: system-ui;
+    font-size: 12px;
   }
   
   .post-info > h2 {
     font-size: 15px;
   }
   
-  .post-buttons {
+  /* .post-buttons {
     display: flex;
     justify-content: space-evenly;
-  }
+  } */

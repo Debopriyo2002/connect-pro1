@@ -1,19 +1,29 @@
 
-
 import React, { useState, useEffect } from 'react';
 import { AiFillLike } from 'react-icons/ai';
+import { AiOutlineComment } from 'react-icons/ai';
+import { IoSendSharp } from 'react-icons/io5';
+import { TiDeleteOutline } from 'react-icons/ti'; // Import delete icon
 import { useDispatch, useSelector } from 'react-redux';
 import { selectUser } from '../../../features/userSlice';
 import { db } from '../../../firebase';
+// like index.css
 import './index.css';
 import {
   collection,
+  addDoc,
+  query,
+  where,
+  onSnapshot,
+  getDocs,
   doc,
   updateDoc,
   arrayUnion,
   arrayRemove,
   getDoc,
 } from 'firebase/firestore';
+import { deleteDoc } from 'firebase/firestore';
+
 
 export default function LikeButton({ postId }) {
   const user = useSelector(selectUser);
@@ -74,12 +84,23 @@ export default function LikeButton({ postId }) {
   const buttonClass = isLiked ? 'liked' : ''; // Add 'liked' class when isLiked is true
 
   return (
-    <div className={`Like-container ${buttonClass}`} onClick={handleLike}>
+    <div className="like-comment-container">
+      <div className={`Like-container ${buttonClass}`} onClick={handleLike}>
 
+        <div className='like-count'>
+          <p>{likesCount} People Like this Post</p>
+        </div>
+        <div>
+          <hr />
 
-      <AiFillLike size={22} />
-      <p>{isLiked ? 'Liked' : 'Like'}</p>
-      <p>{likesCount} Likes</p>
+        </div>
+        <div className='like-inner'>
+          <AiFillLike size={22} />
+          <p>{isLiked ? 'Liked' : 'Like'}</p>
+        </div>
+
+      </div>
+
 
     </div>
   );
