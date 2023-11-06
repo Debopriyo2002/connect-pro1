@@ -1,14 +1,9 @@
 import React, { forwardRef } from "react";
 import "./Post.css";
-import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
-import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
-import ChatOutlinedIcon from "@material-ui/icons/ChatOutlined";
-import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import { Avatar } from "@material-ui/core";
-import LikeButton from "../components/LikeButton";
-import CommentButton from "../components/comments";
-// import likeandComment from "./likeandComment";
-import { useEffect } from "react";
+import LikeCommentButton from "../components/LikeButton";
+import "./Post.css";
+
 
 
 const Post = forwardRef(({ id, name, description, message, photoUrl }, ref) => {
@@ -29,11 +24,7 @@ const Post = forwardRef(({ id, name, description, message, photoUrl }, ref) => {
       </div>
 
       <div className="post-buttons">
-
-        <LikeButton postId={id}>
-        </LikeButton>
-        <CommentButton postId={id} />
-        {/* <likeandComment postId={id} /> */}
+        <LikeCommentButton postId={id} />
 
 
 

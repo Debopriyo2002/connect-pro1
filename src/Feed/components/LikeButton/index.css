@@ -5,30 +5,53 @@
     gap: 10px;
     padding: 21px 10px;
     cursor: pointer;
+    margin-bottom: -20px;
 }
 
-/* .Comment-container {
+.like-comment-inner {
+
+    display: flex;
+    align-items: center;
+    /* margin-top: -20px; */
+
+
+}
+
+/* .comment-inner{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    padding: 21px 0px;
+    gap: 1px;
+    padding: 21px 10px;
     cursor: pointer;
-    font-family: system-ui;
-    font-weight: 400;
-    font-size: 13px;
-    cursor: pointer;
-    margin-top: 10px;
-
+    margin-top: 35px;
 } */
-/* .like-comment-container{
 
+.like-comment {
     display: grid;
     grid-template-columns: auto auto auto auto;
-} */
+    /* margin-left: 50px; */
+}
+
+.comment-input {
+    height: 35px;
+    background-color: whitesmoke;
+    padding-left: 7px;
+    border-radius: 30px;
+    border: 1px solid #737373;
+    font-family: system-ui;
+    color: #949494;
+    font-size: 14px;
+}
+
+.comment-input:focus {
+    outline: 1px solid #949494;
+    color: #949494;
+}
 
 .hr-line {
 
+    /* margin-top: -17px; */
     hr {
         border-top: 1px solid rgb(181, 181, 181);
     }
@@ -37,17 +60,23 @@
 p {
     font-family: system-ui;
     font-weight: 400;
-    font-size: 13px;
     color: rgba(0, 0, 0, 0.835);
+    font-size: 13px;
+    margin-left: 5px;
 
 
 }
 
-.Like-container.liked {
+/* .Like-container.liked {
     color: blue;
-}
+} */
 
-.like-count p {
+/* .like-count p {
     font-size: 11.5px;
     font-weight: 400;
-}
+} */
+/* .comment-count{
+    display: grid;
+    
+
+} */
