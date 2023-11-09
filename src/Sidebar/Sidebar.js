@@ -42,11 +42,11 @@ function Sidebar() {
 
       <div className="sidebar-bottom">
         <p>Recent</p>
-        {recentItem("reactjs")}
-        {recentItem("programming")}
-        {recentItem("softwareengineering")}
-        {recentItem("design")}
-        {recentItem("developer")}
+        {recentItem("NBA Teams")}
+        {recentItem("FIBA teams")}
+        {recentItem("NIL Jersey")}
+        {recentItem("NBA campion")}
+        {recentItem("Baskitball")}
       </div>
     </div>
   );
