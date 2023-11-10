@@ -7,7 +7,7 @@ import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 // import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+// import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import { useDispatch } from "react-redux";
 import { logout, selectUser } from "../features/userSlice";
 import { auth } from "../firebase";
@@ -36,7 +36,7 @@ function Header() {
         <HeaderOption Icon={SupervisorAccountIcon} title="My Connections" />
         <HeaderOption Icon={ChatBubbleIcon} title="Messaging" />
         <HeaderOption Icon={NotificationsIcon} title="Notification" />
-        <HeaderOption Icon={ThumbUpIcon} title="Recommendation" />
+        {/* <HeaderOption Icon={ThumbUpIcon} title="Recommendation" /> */}
         <HeaderOption
           onClick={logOutOfApp}
           title={user?.displayName}
