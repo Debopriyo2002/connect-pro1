@@ -12,15 +12,14 @@ Connect-Pro which created with ReactJS & ReduxLink.
 
 ## Create By
 Manish (fornt-End & Backend)
-Debopriyo paul(backend)
+Debopriyo Paul( backend & Like and Comment System )
 Tanmay(research paper)
 Harshita(UI)
 
-In the project directory, you can run:
 
 ### View Project
 
-Deployed Link : https://connect-pro-new.web.app/
+Deployed Link: https://connect-pro-new.web.app/
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
